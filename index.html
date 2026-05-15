@@ -192,6 +192,7 @@ alt="certificate"
 <br>
 
 <a href="Farida Salah (1).png" download>
+    
 <button>
 تحميل الشهادة 🎓
 </button>
@@ -205,6 +206,9 @@ alt="certificate"
 </div>
 <audio id="failSound">
 <source src="sound.mp3" type="audio/mpeg">
+</audio>
+<audio id="succSound">
+<source src="sound2.mp3" type="audio/mpeg" >
 </audio>
 
 <script>
@@ -228,7 +232,7 @@ if(answer === "منه رمضان"){
 
 document.getElementById("q1").style.display="none";
 document.getElementById("final").style.display="block";
-
+document.getElementById("succSound").play();
 }
 
 else{
