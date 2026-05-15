@@ -203,6 +203,9 @@ alt="certificate"
 </div>
 
 </div>
+<audio id="failSound">
+<source src="sound.mp3" type="audio/mpeg">
+</audio>
 
 <script>
 
@@ -231,6 +234,8 @@ document.getElementById("final").style.display="block";
 else{
 
 document.getElementById("errorText").style.display="block";
+
+document.getElementById("failSound").play();
 
 }
 
